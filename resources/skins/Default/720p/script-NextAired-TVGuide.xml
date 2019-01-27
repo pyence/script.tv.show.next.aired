@@ -14,7 +14,7 @@
 				<texture>TVGuide-Background.jpg</texture>
 			</control>
 			<control type="group">
-				<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+				<visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -426,7 +426,7 @@
 			<itemgap>2</itemgap>
 			<control type="group">
 				<description>Monday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.200.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -502,7 +502,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -539,7 +539,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -586,7 +586,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -623,7 +623,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -660,7 +660,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -707,14 +707,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Tuesday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.201.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.201.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -790,7 +790,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -827,7 +827,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -874,7 +874,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -911,7 +911,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -948,7 +948,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -995,14 +995,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Wednesday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.202.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.202.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -1078,7 +1078,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1115,7 +1115,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1162,7 +1162,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -1199,7 +1199,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1236,7 +1236,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1283,14 +1283,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Thursday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.203.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.203.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -1366,7 +1366,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1403,7 +1403,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1450,7 +1450,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -1487,7 +1487,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1524,7 +1524,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1571,14 +1571,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Friday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.204.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.204.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -1654,7 +1654,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1691,7 +1691,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1738,7 +1738,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -1775,7 +1775,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1812,7 +1812,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1859,14 +1859,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Saturday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.205.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.205.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -1942,7 +1942,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -1979,7 +1979,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2026,7 +2026,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -2063,7 +2063,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2100,7 +2100,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2147,14 +2147,14 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>
 			</control>
 			<control type="group">
 				<description>Sunday</description>
-				<visible>!StringCompare(Window(Home).Property(NextAired.206.Wday),)</visible>
+				<visible>!String.IsEqual(Window(Home).Property(NextAired.206.Wday),)</visible>
 				<width>170</width>
 				<height>655</height>
 				<control type="image">
@@ -2230,7 +2230,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2267,7 +2267,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2314,7 +2314,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100" width="170">
@@ -2351,7 +2351,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2388,7 +2388,7 @@
 							<font>font10</font>
 							<textcolor>FFFFFFFF</textcolor>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 						</control>
 						<control type="group">
 						    <posx>0</posx>
@@ -2435,7 +2435,7 @@
 							<align>right</align>
 							<font>font10</font>
 						    </control>
-						    <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+						    <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 						</control>
 					</focusedlayout>
 				</control>

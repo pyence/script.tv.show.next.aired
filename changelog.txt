@@ -1,3 +1,7 @@
+-6.0.16 (2019-01-27)
+- Update skin changes
+- Remove Artwork Downloader
+
 -6.0.15 (2015-12-04)
 - Fix unicode normalization issue where some search strings could become an empty string.
 - Fix a crash in the DST date code for certain funky dates.
